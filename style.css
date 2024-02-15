@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nanum Pen Script', cursive;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+header h1{
+    color: rgb(233, 233, 233);
+    margin-top: 25px;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+
+.main1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./img/Banner-site.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-p{
+    width: 68%;
+    border-radius: 25px;
+    position: relative;
+    top: 35px;
+    display: flex;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+article{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article img{
+    width: 320px;
+    height: 320px;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+}
+
+aside p{
+    color: azure;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: center;
+    width: 300px;
+}
+
+.main2{
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-container{
+    width: 55%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons-container a{
+    font-size: 23px;
+    color: rgb(255, 255, 255);                             
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    
+}
+.icons-container a:hover{
+    transform: translateY(-3px);
+    color: rgb(129, 129, 129);
+}
+
+
+.play{
+    width: 175px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(22, 22, 22);
+    color: rgb(185, 185, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-family: "Pompiere", sans-serif;
+    letter-spacing: 1px;
+}
+.play a{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+}
+.play:hover{
+    background-color: rgb(22, 22, 22);
+}
+
+aside h1{
+    color: white;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 40px;
+    margin: 25px;
+    
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(157, 157, 157);
+    font-family: 'Reenie Beanie', cursive;
+}
+
+footer article{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer article h1{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer aside{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer aside h5{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
