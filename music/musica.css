@@ -194,3 +194,39 @@ body{
         transform: rotate(360deg);
     }
 }
+
+/* Estilos base */
+
+/* Media queries para smartphones em modo retrato */
+@media only screen and (max-width: 600px) {
+    .music-player {
+        width: 90%; /* Redimensionar o reprodutor de música para uma largura menor */
+    }
+    .controls {
+        flex-direction: column; /* Alterar a disposição dos controles para uma coluna */
+    }
+}
+
+/* Media queries para smartphones em modo paisagem e tablets em modo retrato */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .music-player {
+        width: 70%; /* Redimensionar o reprodutor de música para uma largura intermediária */
+    }
+    .controls {
+        justify-content: space-around; /* Distribuir os controles horizontalmente */
+    }
+}
+
+/* Media queries para tablets em modo paisagem e desktops menores */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .music-player {
+        width: 600px; /* Definir um tamanho fixo para o reprodutor de música */
+    }
+}
+
+/* Media queries para desktops maiores */
+@media only screen and (min-width: 1201px) {
+    .music-player {
+        width: 800px; /* Aumentar o tamanho do reprodutor de música para telas maiores */
+    }
+}
