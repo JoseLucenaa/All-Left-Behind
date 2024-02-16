@@ -120,6 +120,7 @@ body{
 .song-duration{
     position: absolute;
     right: 0;
+    font-size: 14px;
     font-family: "Fredoka", sans-serif;
 }
 
