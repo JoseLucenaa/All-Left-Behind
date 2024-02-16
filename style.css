@@ -135,7 +135,7 @@ aside p{
     width: 175px;
     height: 50px;
     background: transparent;
-    border: 2px solid rgb(188, 188, 188);
+    border: 2px solid rgb(0, 0, 0);
     color: rgb(185, 185, 185);
     display: flex;
     align-items: center;
@@ -150,8 +150,7 @@ aside p{
     text-decoration: none;
 }
 .play:hover{
-    background-color: rgb(188, 188, 188);
-    color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 aside h1{
