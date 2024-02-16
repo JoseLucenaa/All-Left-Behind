@@ -151,7 +151,6 @@ aside p{
 }
 .play:hover{
     background-color: rgb(188, 188, 188);
-    color: black;
 }
 .play a:hover{
     color: rgb(0, 0, 0);
