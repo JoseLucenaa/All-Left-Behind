@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pompiere&display=swap');
 
 *{
     margin: 0;
@@ -43,6 +44,7 @@ body{
 .music-name, .artist-name{
     text-align: center;
     text-transform: capitalize;
+    font-family: "Fredoka", sans-serif;
 }
 
 .music-name{
@@ -88,8 +90,7 @@ body{
 
 .song-slider{
     width: 100%;
-    position: relative
-    ;
+    position: relative;
 }
 
 .seek-bar{
@@ -111,11 +112,13 @@ body{
 
 .current-time, song-duration{
     font-size: 14px;
+    font-family: "Fredoka", sans-serif;
 }
 
 .song-duration{
     position: absolute;
     right: 0;
+    font-family: "Fredoka", sans-serif;
 }
 
 .controls{

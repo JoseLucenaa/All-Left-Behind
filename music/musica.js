@@ -1,14 +1,23 @@
 let currentMusic = 0;
 
-const music = document.querySelector('#audio')
+const songs = [
+    {
+        name: 'All Left Behind',
+        path: 'alb2024.wav',
+        artist: 'Santiago Mianoe',
+        cover: '../img/img-cont.png'
+    }
+]
 
-const seekBar = document.querySelector('.seek-bar')
-const name = document.querySelector('.music-name')
-const artistName = document.querySelector('.artist-name')
-const disk = document.querySelector('.disk')
-const currentTime = document.querySelector('.current-time')
-const musicDuration = document.querySelector('.song-duration')
-const playBtn = document.querySelector('.play-btn')
+const music = document.querySelector('#audio');
+
+const seekBar = document.querySelector('.seek-bar');
+const songName = document.querySelector('.music-name');
+const artistName = document.querySelector('.artist-name');
+const disk = document.querySelector('.disk');
+const currentTime = document.querySelector('.current-time');
+const musicDuration = document.querySelector('.song-duration');
+const playBtn = document.querySelector('.play-btn');
 
 playBtn.addEventListener('click', () => {
     if(playBtn.className.includes('pause')){
@@ -16,10 +25,9 @@ playBtn.addEventListener('click', () => {
     }else{
         music.pause();
     }
-    playBtn.classList.toggle('pause')
-    disk.classList.toggle('play')
-})
-
+    playBtn.classList.toggle('pause');
+    disk.classList.toggle('play');
+});
 
 const setMusic = (i) => {
     seekBar.value = 0;
@@ -35,8 +43,8 @@ const setMusic = (i) => {
     setTimeout(() => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = formatTime(music.duration);
-    }, 300);
-}
+    }, 1000);
+};
 
 setMusic(0);
 
@@ -50,4 +58,26 @@ const formatTime = (time) => {
         sec = `0${sec}`;
     }
     return `${min} : ${sec}`;
-}
+};
+
+// sek bar //
+
+setInterval(() => {
+    seekBar.value = music.currentTime;
+    currentTime.innerHTML = formatTime(music.currentTime)
+}, 400);
+
+seekBar.addEventListener('change', () => {
+    music.currentTime = seekBar.value;
+})
+
+music.addEventListener('ended', () => {
+    // Volta para o início da música
+    music.currentTime = 0;
+    // Pausa a reprodução
+    music.pause();
+    // Atualiza o botão de reprodução para o estado de pausa
+    playBtn.classList.add('pause');
+    // Atualiza a classe do disco para parar a animação
+    disk.classList.remove('play');
+});
