@@ -146,11 +146,12 @@ aside p{
     letter-spacing: 1px;
 }
 .play a{
-    color: rgb(0, 0, 0);
+    color: rgb(188, 188, 188);
     text-decoration: none;
 }
 .play:hover{
     background-color: rgb(188, 188, 188);
+    color: black;
 }
 
 aside h1{
