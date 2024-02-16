@@ -9,13 +9,30 @@
     <title>Preview All Left Behind</title>
 </head>
 <body>
-    <div class="voltar"><a href="../index.html"><i class="bi bi-arrow-left-circle-fill"></i></a></div>
 
-    <div class="player">
-        <div class="imgbox">
-            <img src="../img/img-container.png" alt="img" id="img-container">
+    <audio src="alb2024.wav" id="audio"></audio>
+
+    <div class="music-player">
+        <h1 class="music-name">All Left Behind</h1>
+        <p class="artist-name">Santiago Mianoe</p>
+
+        <div class="disk"></div>
+
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
         </div>
-            <audio src="alb2024.wav" type="audio/mp3" controls ></audio>
+
+        <div class="controls">
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
+
+    <script src="musica.js"></script>
+    <script src="data.js"></script>
 </body>
 </html>
