@@ -150,7 +150,7 @@ aside p{
 }
 .play:hover{
     background-color: rgb(0, 0, 0);
-    border: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     color: rgb(188, 188, 188);
 }
 
